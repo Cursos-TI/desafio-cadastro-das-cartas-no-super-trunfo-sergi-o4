@@ -6,6 +6,8 @@ int main() {
     float area;
     float pib;
     char cidade[50];
+  
+  
 //cdc = Código da cidade
 //pop = População
 //pt = Pontos Turísticos
@@ -32,5 +34,15 @@ int main() {
     printf ("População: %d\n", pop);
     printf ("PIB: %f\n", pib);
     printf ("\n");
+
+    float densi = (float) pop / area;
+    float pibp = (float) pib / pop;
+// densi = Densidade populacional
+// pibp = PIB per Capita  
+
+    printf ("Densidade Populacional: %.2f\n", densi);
+    printf("PIB per Capita: %.2f\n", pibp);
+
+
     return 0;
 }
